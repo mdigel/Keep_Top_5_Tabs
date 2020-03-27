@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "TBD",
+  "name": "Keep 5 Tabs - a tab closer",
   "version": "1.0",
-  "description": "TBD",
+  "description": "Close all your tabs with 1 click except your 5 most recntly used",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["./main.js"]
+      "js": ["jquery.min.js","./main.js"]
     }
   ],
   
@@ -16,6 +16,11 @@
   
   "browser_action": {
     "default_icon": "icon.png"
+  },
+  "icons": {
+     "16": "icon.png",
+      "48": "icon.png",
+     "128": "icon.png"
   },
   "permissions": [
     "activeTab",
